@@ -1,3 +1,4 @@
+// Layout for non-auth pages (use footer and navbar)
 import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
 

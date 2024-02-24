@@ -8,6 +8,7 @@ const Header = () => {
   return (
     <header className="w-full border-b">
       <div className="wrapper flex items-center justify-between">
+        {/* Evently logo */}
         <Link href="/" className="w-36">
           <Image
             src="/assets/images/logo.svg"
@@ -17,9 +18,11 @@ const Header = () => {
           />
         </Link>
         <div className="flex w-32 justify-end gap-3">
+          {/* Sign out button */}
           <SignedIn>
             <UserButton afterSignOutUrl="/" />
           </SignedIn>
+          {/* Sign in button */}
           <SignedOut>
             <Button asChild className="rounded-full" size="lg">
               <Link href="/sign-in">Login</Link>
