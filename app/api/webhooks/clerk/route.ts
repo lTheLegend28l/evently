@@ -72,7 +72,7 @@ export async function POST(req: Request) {
 
     const newUser = await createUser(user);
 
-    // add new user's mongodb ID to corresponding clerk user
+    // add new user's mongodb ID to corresponding clerk user's metadata
     if (newUser) {
       await clerkClient.users.updateUserMetadata(id, {
         publicMetadata: {
